@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tushar Dheeman • Product & Motion Designer</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background: #000;
+      color: #e0e0e0;
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      overflow-x: hidden;
+    }
+
+    h1, h2, nav a.button {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    header {
+      padding: 60px 20px 20px;
+      text-align: center;
+      animation: fadeIn 1.8s ease;
+    }
+
+    header h1 {
+      font-family: 'Merienda', cursive;
+      font-size: 2.5rem;
+      margin: 0 0 10px;
+      animation: slideDown 1s ease;
+      letter-spacing: 1px;
+      color: #fff;
+    }
+
+    header p {
+      font-size: 1rem;
+      opacity: 0.8;
+      animation: slideUp 1s ease 0.5s;
+    }
+
+    .profile-img {
+      width: 200px;
+      border-radius: 50%;
+      margin-top: 30px;
+      border: 4px solid #3399ff;
+      animation: glow 3s infinite alternate, floatY 4s ease-in-out infinite;
+      transition: transform 0.3s ease;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    main p {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 20px;
+      line-height: 1.6;
+    }
+
+    h2 {
+      color: #3399ff;
+      font-size: 2rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .section {
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+      margin-bottom: 60px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 40px 0;
+    }
+
+    nav a.button {
+      background: rgba(51, 153, 255, 0.2);
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    }
+
+    nav a.button:hover {
+      background: rgba(51, 153, 255, 0.4);
+      transform: scale(1.05);
+      box-shadow: 0 0 12px #3399ff;
+    }
+
+    .contact {
+      text-align: center;
+      animation-delay: 2s;
+    }
+
+    footer {
+      background: #111;
+      color: #777;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      animation: fadeIn 2s ease-in;
+    }
+
+    a {
+      color: #3399ff;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes glow {
+      from { box-shadow: 0 0 15px #3399ff; }
+      to { box-shadow: 0 0 35px #3399ff; }
+    }
+
+    @keyframes floatY {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>TUSHAR DHEEMAN</h1>
+    <p>Product • UX/UI • Motion Designer</p>
+    <img src="https://avatars.githubusercontent.com/u/224434570?s=400&u=824c8d5f4af7679baf33e26c6054a051577be869&v=4" alt="Profile Photo" class="profile-img" />
+  </header>
+
+  <main>
+    <h2>About Me</h2>
+    <p>
+      Hi, I'm <strong>Tushar Dheeman</strong> — a passionate graphic designer and UX/UI enthusiast from New Delhi.
+      My top tools include <strong>Figma</strong>, Photoshop, CorelDRAW, and Canva, and I'm steadily building strong skills in HTML & CSS.
+    </p>
+    <p>
+      I specialize in crafting bold branding, clean user interfaces, and engaging motion designs that elevate the user experience.
+      I’m currently a Design Instructor at Nishkam Institute and love teaching creative minds.
+    </p>
+    <p>
+      My mission is to turn ideas into visual impact — whether it's through web interfaces, motion storytelling, or seamless design systems.
+      I’m exploring deeper into web design and love merging aesthetics with usability.
+    </p>
+
+    <nav>
+      <a class="button" href="https://www.behance.net/tushardheeman" target="_blank">Behance</a>
+      <a class="button" href="https://dribbble.com/tushardheeman2001" target="_blank">Dribbble</a>
+      <a class="button" href="https://www.instagram.com/the.unknown_artistt/?hl=en" target="_blank">Instagram</a>
+    </nav>
+
+    <div class="section contact">
+      <h2>Contact</h2>
+      <p>Want to collaborate or chat?</p>
+      <p><a href="mailto:tushardheeman2001@gmail.com">tushardheeman2001@gmail.com</a></p>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Tushar Dheeman • Designed w/ Motion & Storytelling
+  </footer>
+</body>
+</html>
